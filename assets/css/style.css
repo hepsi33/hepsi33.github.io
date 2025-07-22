@@ -1901,3 +1901,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 0.9em;
   color: #ccc;
 }
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  color: #ffb6c1; /* soft pink highlight on hover */
+}
+
+.skills-list ion-icon {
+  font-size: 1.2em;
+  color: #ffb6c1; /* soft pink icon color */
+}
