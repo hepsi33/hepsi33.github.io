@@ -1720,3 +1720,34 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 1.2em;
   color: var(--orange-yellow-crayola);
 }
+/*-----------------------------------*\
+  #CUSTOM STYLES: Timeline hover effect
+\*-----------------------------------*/
+
+/* Add smooth hover effect to timeline items (soft skills, certifications, languages) */
+.timeline-item {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.timeline-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2); /* subtle orange-yellow shadow */
+  background-color: rgba(255, 193, 7, 0.05);    /* faint background on hover */
+}
+
+/* Make timeline section icons match your theme */
+.icon-box ion-icon {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Optional: Keep smooth transition on icon color */
+.icon-box ion-icon {
+  transition: color 0.3s;
+}
+
+/* Optional: change icon color slightly on hover of title-wrapper */
+.title-wrapper:hover .icon-box ion-icon {
+  color: var(--vegas-gold);
+}
