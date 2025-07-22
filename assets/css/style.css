@@ -1733,9 +1733,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .timeline-item:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2); /* subtle orange-yellow shadow */
-  background-color: rgba(255, 193, 7, 0.05);    /* faint background on hover */
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+  background-color: rgba(255, 193, 7, 0.05);
 }
+
 
 /* Make timeline section icons match your theme */
 .icon-box ion-icon {
@@ -1745,9 +1746,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Optional: Keep smooth transition on icon color */
 .icon-box ion-icon {
   transition: color 0.3s;
-}
-
-/* Optional: change icon color slightly on hover of title-wrapper */
-.title-wrapper:hover .icon-box ion-icon {
-  color: var(--vegas-gold);
 }
