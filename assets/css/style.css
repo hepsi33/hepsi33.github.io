@@ -1880,3 +1880,24 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+.project-card {
+  display: block;
+  padding: 15px;
+  background-color: #ffffff10;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.3);
+}
+.project-title {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+.project-category {
+  font-size: 0.9em;
+  color: #ccc;
+}
