@@ -82,7 +82,7 @@
       </ul>
     </nav>
 
-    <!-- ABOUT -->
+   <!-- ABOUT -->
     <article class="about active" data-page="about">
       <header><h2 class="h2 article-title">About Me</h2></header>
       <section class="about-text">
@@ -91,11 +91,9 @@
       </section>
     </article>
 
-     <article class="resume" data-page="resume">
-
-  <header>
-    <h2 class="h2 article-title">Resume</h2>
-  </header>
+    <!-- RESUME -->
+    <article class="resume" data-page="resume">
+      <header><h2 class="h2 article-title">Resume</h2></header>
 
   <!-- Education -->
   <section class="timeline">
@@ -263,7 +261,7 @@
     </li>
   </ol>
 </section>
-
+    </article>
 
     <!-- PROJECTS -->
     <article class="projects" data-page="projects">
@@ -307,6 +305,14 @@ navLinks.forEach(link => {
     pages.forEach(page => page.classList.remove('active'));
     document.querySelector(`[data-page="${link.dataset.navLink}"]`).classList.add('active');
   });
+});
+  
+</script>
+<script>
+const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+const sidebar = document.querySelector('[data-sidebar]');
+sidebarBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
 });
 </script>
 
